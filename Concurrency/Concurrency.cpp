@@ -101,7 +101,7 @@ Result_T accumulate_numbers(Iterator beg, Iterator end)
 int main()
 {
 	vector<int> vec{1,2,3,4,5,6,7,8,9,10};
-	parallel_invoke([&vec] {accumulate_numbers<int, Is_Even<true>>(cbegin(vec), cend(vec)); },
+	parallel_invoke([&vec] { accumulate_numbers<int, Is_Even<true>>(cbegin(vec), cend(vec)); },
 					[&vec] { accumulate_numbers<int, Is_Even<false>>(cbegin(vec), cend(vec)); }
 																	);
 

@@ -17,4 +17,15 @@
 using std::cout;
 #include <ppl.h>
 #include <ppltasks.h>
+#include <agents.h>
 using namespace concurrency;
+#include <string>
+using std::string;
+#include <fstream>
+using std::ifstream;
+#include <algorithm>
+#include <vector>
+using std::vector;
+
+
+#include "Bad_File_Read_Exception.h"
